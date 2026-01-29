@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Monthly Budget Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- APP HEADER -->
+  <header>
+    <h1>Smart Monthly Budget Planner 💰</h1>
+    <p>Plan • Adjust • Track your money smartly</p>
+  </header>
+
+  <!-- STEP 1: ENTER BUDGET -->
+  <section id="step1">
+    <h2>Step 1: Enter Your Monthly Budget</h2>
+
+    <input
+      type="number"
+      id="budgetInput"
+      placeholder="Enter monthly budget"
+    >
+
+    <button id="saveBudgetBtn">Continue</button>
+  </section>
+
+  <!-- STEP 2 & 3: DISTRIBUTION + ADJUSTMENT -->
+  <section id="step2" style="display:none;">
+    <h2>Step 2: Budget Distribution</h2>
+    <p>You can adjust amounts if needed. Savings will update automatically.</p>
+
+    <!-- CATEGORY LIST -->
+    <div id="distributionList"></div>
+
+    <!-- ACTION BUTTONS -->
+    <div style="margin-top:20px;">
+      <button id="satisfiedBtn">Satisfied ✅</button>
+      <button id="adjustBtn">Adjust ❌</button>
+    </div>
+  </section>
+
+  <!-- STEP 4: MAINTENANCE (NEXT PHASE) -->
+  <section id="step4" style="display:none;">
+    <h2>Step 4: Expense Tracking</h2>
+    <p>This section will track what you actually spend.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
